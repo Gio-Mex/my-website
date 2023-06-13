@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giorgio Messore Web developer, contacts.">
+    <meta name="robots" content="follow">
+
+    <title>Contacts</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
+
+    <!--Font awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!--MDB-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" href="#sidebar" role="button" data-bs-toggle="offcanvas"
+                aria-controls="navbarNav">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </button>
+
+            <div class="offcanvas bg-dark offcanvas-start w-50" tabindex="-1" id="sidebar"
+                aria-labelledby="offcanvas-label">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link disabled" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="bio.html">Bio</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="contacts.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-11 col-lg-6 mx-auto py-5 px-2 d-flex flex-column justify-content-between">
+
+        <!--form-->
+        <form class="position-relative border rounded-7 p-4 px-md-5 pb-md-5 my-4 my-md-5" id="contact-form">
+            <div class="position-absolute top-0 start-50 translate-middle px-2
+                        d-flex align-items-center justify-content-center" style="background-color: #f3f3f3;">
+                <h2>Get in touch</h2>
+            </div>
+
+            <!--name input-->
+            <div class="my-4">
+                <label class="form-label" for="from-name">Full Name</label>
+                <input type="text" name="from-name" id="from-name" class="form-control bg-light rounded" required />
+                <div class="invalid-feedback">Please proveide a Name.</div>
+            </div>
+
+            <!--email input-->
+            <div class="mb-4">
+                <label class="form-label" for="email">Email address</label>
+                <input type="email" name="email" id="email" class="form-control bg-light rounded" required />
+            </div>
+
+            <!--message input-->
+            <div class="mb-4 mb-md-5">
+                <label class="form-label" for="message">Message</label>
+                <textarea name="message" id="message" class="form-control bg-light rounded" rows="5"
+                    required></textarea>
+            </div>
+
+            <!--send button-->
+            <input type="submit" id="send-button" class="btn btn-primary btn-block btn-rounded" value="Send"></input>
+
+        </form>
+
+
+        <!--social-->
+        <div class="d-flex justify-content-around position-relative border rounded-7 p-5 px-4 mt-5">
+            <div class="position-absolute top-0 start-50 translate-middle p-2
+                            d-flex align-items-center justify-content-center" style="background-color: #f3f3f3;">
+                <h2 class="my-auto">Social</h2>
+            </div>
+            <div
+                class="position-absolute top-0 start-100 translate-middle badge border border-light bg-danger rounded-circle p-2">
+                <i class="fa-solid fa-bell fa-shake fa-lg" style="color: #ffffff;"></i>
+            </div>
+
+            <!--Facebook-->
+            <a class="btn text-white" style="background-color: #3b5998;" href="#!" role="button">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!--Instagram-->
+            <a class="btn text-white" style="background-color: #ac2bac;" href="#!" role="button">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!--Linkedin-->
+            <a class="btn text-white" style="background-color: #0082ca;" href="#!" role="button">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!--Github-->
+            <a class="btn text-white" style="background-color: #333333;" href="#!" role="button">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('AHZ6M46uPf-xvhJ5O')
+    </script>
+    <script src="./assets/js/email.js"></script>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+    <!--JS scripts-->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>

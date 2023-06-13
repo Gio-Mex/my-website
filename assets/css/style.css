@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    font-weight: 500;
+    color: #f3f3f3;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: #3b71ca;
+}
+
+.offcanvas {
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+
+.home-img {
+    width: 100%;
+    max-height: 500px;
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.home-img-content {
+    background-color: #f3f3f3;
+}
+
+.img-label1,
+.img-label2 {
+    color: #333;
+    font-weight: 400;
+}
+
+.img-label3 {
+    color: #606060;
+}
+
+.banner {
+    top: 0;
+    height: 3900px;
+    position: absolute;
+    margin-left: 6%;
+}
+
+.soft-skills,
+.hard-skills {
+    background-color: #f3f3f3;
+}
+
+
+.determination-container {
+    left: -7%;
+    z-index: 2;
+}
+
+.desire-container {
+    z-index: 1;
+}
+
+.passion-container {
+    top: 125%;
+    right: -5%;
+    z-index: 1;
+}
+
+.relations-container {
+    top: 210%;
+    left: -7%;
+    z-index: 1;
+}
+
+.patience-container {
+    background-color: #f3f3f3;
+}
+
+
+
+
+.index-decoration {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 165%;
+    right: 7%;
+}
+
+.index-decoration1 {
+    width: 150px;
+    height: 150px;
+}
+
+.index-decoration2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+
+.index-decoration3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.bio-decoration {
+    width: 300px;
+    height: 150px;
+}
+
+.bio-decoration2 {
+    width: 150px;
+    height: 150px;
+    left: -80px;
+    top: -40px;
+}
+
+.curriculum {
+    width: auto;
+    height: 80px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+.active {
+    height: 1250px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    p {
+        font-size: 18px;
+    }
+
+    .banner{
+        height: 4200px;
+    }
+
+    .home-img {
+        height: 100%;
+    }
+
+    .soft-skills,
+    .hard-skills,
+    .determination-container,
+    .desire-container,
+    .passion-container,
+    .altruism-container,
+    .relations-container,
+    .patience-container {
+        max-width: 520px;
+    }
+
+
+    .determination-container {
+        left: 0;
+        z-index: 2;
+    }
+
+    .desire-container {
+        left: 30%;
+        z-index: 1;
+    }
+
+    .passion-container {
+        top: 125%;
+        left: 4%;
+    }
+
+    .altruism-container {
+        left: 20%;
+    }
+
+    .relations-container {
+        top: 210%;
+        left: 10%;
+        z-index: 1;
+    }
+
+    .patience-container {
+        background-color: #f3f3f3;
+        top: 275%;
+        left: -5%;
+    }
+
+    .index-decoration {
+        top: 700px;
+    }
+
+    .index-decoration1 {
+        position: absolute;
+        top: 2700px;
+        left: 3%;
+    }
+
+
+    .index-decoration2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 215%;
+        left: 65%;
+    }
+
+    .index-decoration3 {
+        top: -200px;
+        height: 400px;
+    }
+}
+
+
+
+@media (min-width: 991.98px) {
+
+.home-img-content {
+    left: -10px;
+}
+
+.banner{
+    height: 3300px;
+}
+
+.determination-container {
+    height: 500px;
+    left: 5%;
+}
+
+.desire-container {
+    left: 20%;
+}
+
+.passion-container {
+    position: absolute;
+    top: 900px;
+    height: 600px;
+    left: 50%;
+}
+
+.altruism-container {
+    left:0;
+}
+
+.relations-container {
+    position: absolute;
+    top: 1750px;
+    left: 56%;
+}
+
+.patience-container {
+    left: 5%;
+}
+
+.index-decoration1 {
+    top: 1700px;
+}
+
+.curriculum {
+    width: 250px;
+    height: auto;
+}
+
+.active {
+    width: 100%;
+}
+}
+
+
+
+@media (min-width: 2000px) {
+.home-img-content{
+    left:10%;
+}
+
+.index-decoration1 {
+    left: 8%;
+}
+
+.index-decoration2 {
+    left: 70%;
+}
+
+.passion-container {
+    left: 53%;
+}
+
+.altruism-container {
+    left:23%;
+}
+
+.relations-container {
+    right:0;
+}
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giorgio Messore Web developer, soft and hard skills.">
+    <meta name="og:title" property="og:title" content="Giorgio Messore - Web Developer">
+    <meta name="robots" content="index, follow">
+
+    <title>Giorgio Messore - Web Developer</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
+
+    <!--Font awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!--MDB-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <div class="container-md mx-auto overflow-hidden">
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" href="#sidebar" role="button" data-bs-toggle="offcanvas"
+                    aria-controls="navbarNav">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </button>
+
+                <div class="offcanvas bg-dark offcanvas-start w-50" tabindex="-1" id="sidebar"
+                    aria-labelledby="offcanvas-label">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link disabled" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="bio.html">Bio</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="contacts.html">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--blue banner-->
+        <div class="banner w-50 bg-primary fs-5 rounded p-4"></div>
+
+
+        <!--header-->
+        <div class="row mt-5 d-flex justify-content-md-end justify-content-lg-start">
+            <div class="bg-image">
+
+                <img src="assets/img/index-img.jpg" class="home-img" alt="programmer" />
+                <div class="mask" style="border-top-left-radius: 250px; 
+                      border-bottom-left-radius: 250px;"></div>
+            </div>
+
+            <div
+                class="home-img-content w-auto m-2 m-md-4 m-lg-5 position-absolute d-flex
+                 flex-column justify-content-between opacity-75 p-5 py-1 py-lg-4 rounded-pill shadow-5-strong">
+                <div class="img-label1 text-dark display-3 align-self-start reveal load-hidden">Giorgio</div>
+                <div class="img-label2 text-dark display-3 align-self-end reveal1 load-hidden ms-5">Messore</div>
+                <div class="img-label3 display-6 align-self-center reveal load-hidden">
+                    <h1>Web developer</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <!--soft skills-->
+        <div
+            class="soft-skills position-relative p-3 rounded-pill my-5 mx-auto
+             d-flex align-items-center justify-content-center">
+            <h2 class="display-5">Soft Skills</h2>
+        </div>
+
+        <!--determination content-->
+        <div class="card bg-dark mb-4 shadow-5-strong determination-container pe-none">
+            <div class="bg-image">
+                <img class="h-100 card-img-top" style="height: 200px;" src="./assets/img/determination-img.jpg" alt="success, go get it">
+                <div class="mask" style="
+                            background: linear-gradient(
+                            to left,
+                            hsla(0, 0%, 0%, 0) 30%,
+                            hsla(0, 0%, 0%, 0.5)
+                            );
+                            ">
+                </div>
+            </div>
+            <div class="card-body p-5">
+                <h3 class="card-title text-white text-center mb-3">Determination</h3>
+                <p class="card-text text-white">When I set myself a goal, I do everything to achieve it, even if
+                    unforeseen
+                    obstacles arise, and it takes longer, I don't give up until the goal is reached.</p>
+            </div>
+        </div>
+
+        <!--desire content-->
+        <div class="col bg-info text-dark mb-4 shadow-3-strong desire-container card reveal2 load-hidden pe-none">
+            <img class="object-cover object-center w-100 card-img-top d-none d-lg-block" style="height: 220px;"
+            src="./assets/img/desire.jpg" alt="computer">
+            <div class="card-body p-5">
+                <h3 class="card-title text-center mb-3">Desire to Learn</h3>
+                <p class="card-text">I'm a curious person, when I'm interested in something I try to learn as much as
+                    possible about it and how it works. I believe that regardless of age or experience there is always
+                    more
+                    to learn in life, especially from those with the most knowledge.</p>
+            </div>
+        </div>
+
+        <!--passion content-->
+        <div class="col bg-secondary text-dark mb-4 shadow-4-strong passion-container card pe-none">
+            <img class="object-cover object-bottom w-100 card-img-top d-none d-md-block" style="height: 280px;"
+                src="./assets/img/passion-img.jpg" alt="programming language">
+            <div class="card-body p-5">
+                <h3 class="card-title text-center mb-3">Passion</h3>
+                <p class="card-text">I've always been attracted to technology in general and computer science in
+                    particular, as you can read in my <a href="bio.html" 
+                    class="text-primary pe-auto">bio</a>. The passion for themv
+                    pushes me to get involved and accept new challenges.</p>
+            </div>
+        </div>
+
+        <!--altruism content-->
+        <div class="col bg-dark mb-4 text-white shadow-3-strong altruism-container card pe-none">
+            <img class="object-cover object-center w-100 card-img-top" style="height: 200px;"
+                src="./assets/img/altruism-img.jpg" alt="outstretched hand">
+            <div class="card-body p-5">
+                <h3 class="card-title text-center mb-3">Altruism</h3>
+                <p class="card-text">I like the idea of being able to create something that is really useful
+                    to
+                    others, I get satisfaction from solving their problems.</p>
+            </div>
+        </div>
+
+        <!--relations content-->
+        <div class="card bg-secondary mb-4 mx-md-auto shadow-5-strong relations-container pe-none reveal2">
+            <img class="object-cover object-center w-100 card-img-top" style="height: 200px;"
+                src="./assets/img/relations-img.jpg" alt="white hand together with black hand">
+            <div class="card-body p-5">
+                <h3 class="card-title text-white text-center mb-3">Relations</h3>
+                <p class="card-text text-white">I always try to maintain good relations with everyone, I believe that
+                    conflict never produces anything good. On the contrary, peaceful confrontation, regardless of
+                    language
+                    or race, can certainly enrich.</p>
+            </div>
+        </div>
+
+        <!--patience content-->
+        <div class="card shadow-0 mb-4 text-dark patience-container card pe-none">
+            <img class="object-cover object-center w-100 card-img-top d-none d-lg-block" style="height: 200px;"
+            src="./assets/img/patience-img.jpg" alt="puzzle">
+            <div class="card-body p-5">
+                <h3 class="card-title text-center mb-3">Patience</h3>
+                <p class="card-text">Those who know me say that I have infinite patience, in reality it's not quite like
+                    that, but I can say that I am able to bear difficult situations, in which others perhaps would get
+                    tired
+                    sooner under the weight of the pressure.</p>
+            </div>
+        </div>
+
+        <!--decorations-->
+        <div
+            class="index-decoration d-none d-md-flex bg-primary rounded-pill flex-column justify-content-center py-5">
+            <i class="fa-solid fa-user fa-beat-fade fa-2xl align-self-center" style="color: #ffffff;"></i>
+        </div>
+
+        <div
+            class="index-decoration1 d-none d-md-flex position-absolute bg-info
+             rounded-circle d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-laptop-code fa-spin fa-2xl"></i>
+        </div>
+
+        <div class="index-decoration2 mx-5 bg-secondary rounded-circle">
+            <div class="index-decoration3 bg-dark rounded-pill d-flex flex-column justify-content-end py-5">
+                <i class="fa-solid d-none d-md-block fa-code fa-bounce fa-2xl align-self-center my-3"
+                    style="color: #54B4D3;"></i>
+            </div>
+        </div>
+
+
+        <!--hard skills-->
+        <div
+        class="hard-skills p-3 rounded-pill position-relative my-5 mx-auto d-flex
+         align-items-center justify-content-center">
+        <h2 class="display-5">Hard Skills</h2>
+        </div>
+
+
+        <!--html skill content-->
+        <div class="card p-5 mt-5 reveal3 load-hidden" style="max-width: 540px;">
+            <div class="row g-md-2">
+                <div class="col-md-4 text-center">
+                    <img src="./assets/img/html-img.png" alt="HTML logo" class="w-50 rounded-start" />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body p-0">
+                        <h3 class="card-title text-center mb-4">HTML5</h3>
+                        <p class="card-text text-center">HTML programmer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--css skill content-->
+        <div class="card p-5 my-5 mx-md-auto reveal4 load-hidden" style="max-width: 540px;">
+            <div class="row g-md-2">
+                <div class="col-md-4 text-center">
+                    <img src="./assets/img/css-img.png" alt="CSS logo" class="w-50 rounded-start" />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body p-0">
+                        <h3 class="card-title text-center mb-4">CSS3</h3>
+                        <p class="card-text text-center">CSS and Bootstrap programmer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+    <!--JS scripts-->
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
