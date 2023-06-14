@@ -37,7 +37,7 @@ p {
 }
 
 /*index header*/
-.home-img {
+.index-img {
     width: 100%;
     max-height: 500px;
     border-top-left-radius: 250px;
@@ -46,7 +46,7 @@ p {
     object-position: bottom;
 }
 
-.home-img-content {
+.index-img-content {
     background-color: #f3f3f3;
 }
 
@@ -238,7 +238,7 @@ p {
 @media (min-width: 991.98px) {
 
     /*header*/
-    .home-img-content {
+    .index-img-content {
         left: -10px;
     }
 
@@ -297,7 +297,7 @@ p {
 @media (min-width: 2000px) {
 
     /*header*/
-    .home-img-content {
+    .index-img-content {
         left: 10%;
     }
 
